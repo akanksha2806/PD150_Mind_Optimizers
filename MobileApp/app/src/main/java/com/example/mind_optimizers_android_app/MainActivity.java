@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
                 e.printStackTrace();
             }
-            Intent i=new Intent(MainActivity.this,HomeActivity.class);
+            Intent i=new Intent(MainActivity.this,LoginSignup.class);
             startActivity(i);
             MainActivity.this.finish();
         }
