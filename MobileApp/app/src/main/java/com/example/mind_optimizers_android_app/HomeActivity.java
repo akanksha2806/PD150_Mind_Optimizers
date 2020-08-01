@@ -95,7 +95,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(cycleIntent);
             Toast.makeText(this,"Look for Jobs!!",Toast.LENGTH_LONG).show();
         }
-        /*
+
         if(id == R.id.chat)
         {
             // Create a new intent to open the {@link NumbersActivity}
@@ -105,7 +105,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             startActivity(chatIntent);
             Toast.makeText(this,"Chat with others",Toast.LENGTH_LONG).show();
         }
-        */
+
 
         if(id == R.id.health)
         {
