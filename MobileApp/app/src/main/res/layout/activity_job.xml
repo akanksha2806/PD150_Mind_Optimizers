@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".JobActivity">
+    android:fillViewport="true">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".HealthActivity"
+        android:background="#c4ff4d">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/Job1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="PWD Hiring - Locomotor Disability"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/Job2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textSize="30sp"
+            android:text="Special Educator/Specialist in Learning Disability"
+            android:autoLink="web"
+            android:textColor="@android:color/black"
+            android:linksClickable="true"/>
+        <TextView
+            android:id="@+id/Job3"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Automation Tester (disability)"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job4"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ASSOCIATE – CUSTOMER SUPPORT VOICE PROCESS "
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job5"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Technical Support/customer Service Voice/non Voice Process"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job6"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assistant Professor - Impairment &amp;Intellectual Disability "
+            android:layout_marginTop="20dp"
+
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job7"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Assistant Professor - Intellectual Disability"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job8"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Immediate opportunity For PWD"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/Job9"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Process Associate / Customer Care / Non Voice / Email Chat Support"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+</ScrollView>
