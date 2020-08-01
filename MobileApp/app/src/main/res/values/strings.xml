@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name">Mind_Optimizers_Android_App</string>
+
+    <string name="open">open</string>
+
+    <string name="close">close</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="login_title">Login</string>
+    <string name="create_act">Create Account</string>
+    <string name="etEmail">Email</string>
+    <string name="etPassword">Password</string>
+    <string name="send_password_reset_email">Send Password Reset Email</string>
+
+    <string name="no_users_found">No users found!</string>
+    <string name="login">Login</string>
+    <string name="enter_username">enter username</string>
+    <string name="click_here_to_register">Click here to register</string>
+    <string name="write_a_message">Type a message</string>
+    <string name="click_here_to_login">Click here to login</string>
+    <string name="enter_password">enter_password</string>
+    <string name="register">Register</string>
+    <string name="Job2"><a href="https://www.naukri.com/job-listings-Special-Educator-Specialist-in-Learning-Disability-Bangalore-Oniyavara-Seva-Coota-BOSCO-Bengaluru-Mysore-0-to-5-years-111218500006?src=seo_srp&amp;sid=15799344883025&amp;xp=6&amp;px=1">PWD Hiring - Locomotor Disability</a></string>
+    <string name="Job3"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job4"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job5"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job6"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job7"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job8"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job9"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+    <string name="Job10"><a href="https://www.naukri.com/job-listings-Assistant-Professor-Special-Education-learning-Disability-Amity-University-a-unit-of-Ritnand-Balved-Education-Foundation-Noida-0-to-5-years-161219001499?src=seo_srp&amp;sid=15799344883025&amp;xp=1&amp;px=1">Assistant Professor - Special Education (learning Disability)</a></string>
+
+
 </resources>
