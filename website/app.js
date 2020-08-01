@@ -32,10 +32,6 @@ const storage = multer.diskStorage({
 
 
 
-const nexmo = new Nexmo({
-    apiKey: '5d41d303',
-    apiSecret: 'ADhpJ9QLgKjAqNBL',
-});
 
 
 
