@@ -10,7 +10,7 @@ import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
 
-public class MainActivity extends AppCompatActivity {
+public class SplashActivity extends AppCompatActivity {
 
     private int SleepTimer = 3;
     @Override
@@ -19,9 +19,9 @@ public class MainActivity extends AppCompatActivity {
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash);
         getSupportActionBar().hide();
-        MainActivity.LogoLauncher logoLauncher = new MainActivity.LogoLauncher();
+        LogoLauncher logoLauncher = new LogoLauncher();
         logoLauncher.start();
     }
     private class LogoLauncher extends Thread{
@@ -34,10 +34,9 @@ public class MainActivity extends AppCompatActivity {
 
                 e.printStackTrace();
             }
-            Intent i=new Intent(MainActivity.this,HomeActivity.class);
+            Intent i=new Intent(SplashActivity.this,HomeActivity.class);
             startActivity(i);
-            MainActivity.this.finish();
+            SplashActivity.this.finish();
         }
-
     }
 }
