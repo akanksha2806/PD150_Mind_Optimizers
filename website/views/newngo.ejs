@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          New Ngo
+        </title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css">
+        
+    </head>
+	
+	<style>
+	   .jumbotron{
+	   background:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd0AgrkXzK-uC5zDQiqCmzlSq_zIJ8Ft_XJJ12X-fm3HQMCgXqdQ&s');
+	   height:200px;
+	    text-align:center;
+	   background-repeat:no-repeat;
+	   }
+	</style>
+    <body>
+	<div class="jumbotron">
+       <div class="container">
+            <h1 class="display-4"><b>REGISTER NEW NGO<i class="icon edit "></i></b></h1>
+       </div>
+    </div>
+
+<div class="ui container">
+
+
+<div class="ui main text container segment">
+    <div class="ui huge header">New NGO</div>
+    
+    
+<form  action="/newngo" method="POST" class="ui form">
+    
+        <div class="fields">
+            <div class="eight wide field">
+                <label>NGO Name</label>
+                <input type="text" name="name" placeholder="enter name">
+            </div>
+        </div>
+        <div class="fields">
+            <div class="eight wide field">
+                <label>Phone Number </label>
+                <input type="text" name="phone" placeholder="+91 98**********">
+            </div>
+        </div>
+        
+        <div class="field">
+             <div class="eight wide field">
+                <label>Image</label>
+                <input type="text" name="image" placeholder="image url">
+            </div>
+        </div>
+		 <div class="field">
+             <div class="eight wide field">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="abc@gmail.com">
+            </div>
+        </div>
+		 <div class="field">
+             <div class="eight  wide field">
+                <label>Address</label>
+                 <textarea  name="address" placeholder="enter address"></textarea>
+            </div>
+        </div>
+        <div class="field">
+             <div class="eight  wide field">
+                <label>Description</label>
+                 <textarea  name="description" placeholder="enter description"></textarea>
+            </div>
+        </div>
+    <button class="ui inverted green button ">Submit <i class="icon edit "></i></button>
+   
+</form>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"> 
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+         crossorigin="anonymous">
+      </script>
+
+
+
+</body>
+</html>
