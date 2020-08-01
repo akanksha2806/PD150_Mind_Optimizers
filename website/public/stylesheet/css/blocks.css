@@ -1,0 +1,261 @@
+/**
+/* Landing Page Blocks Specialized Styles
+**/
+
+/* Headers */
+
+.wp-block-atomic-blocks-ab-columns h1,
+.wp-block-atomic-blocks-ab-columns h2,
+.wp-block-atomic-blocks-ab-columns h3,
+.wp-block-atomic-blocks-ab-columns h4,
+.wp-block-atomic-blocks-ab-columns h5,
+.wp-block-atomic-blocks-ab-columns h6,
+.ab-block-container h1,
+.ab-block-container h2,
+.ab-block-container h3,
+.ab-block-container h4,
+.ab-block-container h5,
+.ab-block-container h6 {
+	margin: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns h1.em,
+.ab-block-container h1.em,
+.wp-block-atomic-blocks-ab-columns h2.em,
+.ab-block-container h2.em {
+	font-weight: 300;
+}
+
+.wp-block-atomic-blocks-ab-columns .spacer-bottom,
+.ab-block-container .spacer-bottom {
+	margin-bottom: 20px;
+}
+
+/* Buttons */
+
+.wp-block-atomic-blocks-ab-columns button,
+.ab-block-container button {
+	height: 60px;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-small a,
+.ab-block-container .button-small a {
+	font-size: 12px;
+	padding: 7px 0;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-medium a,
+.ab-block-container .button-medium a {
+	font-size: 14px;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-large a,
+.ab-block-container .button-large a {
+	font-size: 18px;
+}
+
+.wp-block-button a:hover {
+	border: 0 !important;
+}
+
+.wp-block-button__link {
+	padding: 0;
+	width: auto;
+	background-color: transparent;
+}
+
+.is-style-outline .wp-block-button__link {
+	border: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-link,
+.ab-block-container .button-link,
+.wp-block-atomic-blocks-ab-columns .button-link a,
+.ab-block-container .button-link a {
+	color: #546E7A;
+	display: inline-block;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding: 2px 5px;
+	border: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-link:hover,
+.ab-block-container .button-link:hover {
+	border: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns .button-link a:hover,
+.ab-block-container .button-link a:hover {
+	color: #263238;
+	text-decoration: underline;
+	border: 0;
+}
+
+.wp-block-atomic-blocks-ab-container.header-home .button,
+.ab-block-container.header-home .button {
+	width: 200px;
+}
+
+/* Images */
+
+.ab-block-container .wp-block-image,
+.ab-block-container figure {
+	margin-bottom: 0;
+}
+
+/* Side by side */
+
+
+.wp-block-atomic-blocks-ab-container .blob-right,
+.ab-block-container .blob-right {
+        position: relative;
+}
+
+.wp-block-atomic-blocks-ab-container .blob-right svg,
+.ab-block-container .blob-right svg {
+	transform: rotate(180deg);
+        z-index: -1;
+}
+
+.wp-block-atomic-blocks-ab-container .blob-image,
+.ab-block-container .blob-image {
+	position: absolute;
+	z-index: 1;
+	top: 150px;
+	right: 50px;
+}
+
+.wp-block-atomic-blocks-ab-columns .theme-images {
+	position: relative;
+}
+
+.wp-block-atomic-blocks-ab-columns .img-laptop {
+	z-index: 1;
+}
+
+.wp-block-atomic-blocks-ab-columns .img-mobile {
+	position: absolute;
+	bottom: -20px;
+	right: 0;
+	width: 200px;
+	z-index: 2;
+}
+
+/* CTA/Pricing columns */
+
+.ab-is-responsive-column .featured {
+	margin-top: -30px;
+	margin-bottom: -20px;
+}
+
+.ab-is-responsive-column .pro {
+	margin-top: 30px;
+	margin-bottom: -20px;
+}
+
+.wp-block-atomic-blocks-ab-columns.three-deals-tiles .light-box.column-left {
+	border-right: 0;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns.three-deals-tiles .light-box.column-right {
+	border-left: 0;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.pricing-table .ab-is-responsive-column .ribbon {
+	right: -80px;
+	top: -15px;
+}
+
+@media screen and ( max-width: 500px ) {
+
+	.wp-block-atomic-blocks-ab-columns.three-deals-tiles .ab-block-layout-column {
+		margin-bottom: 30px;
+	}
+
+	.ab-is-responsive-column .featured {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.wp-block-atomic-blocks-ab-columns.three-deals-tiles .light-box.column-left {
+		border-right: 1px solid #CFD8DC;
+		border-top-right-radius: 5px;
+		border-bottom-right-radius: 5px;
+	}
+
+	.wp-block-atomic-blocks-ab-columns.three-deals-tiles .light-box.column-right {
+		border-left: 1px solid #CFD8DC;
+		border-top-left-radius: 5px;
+		border-bottom-left-radius: 5px;
+	}
+}
+
+/* Testimonials */
+
+.wp-block-atomic-blocks-ab-columns.testimonial {
+	padding: 80px;
+}
+
+.wp-block-atomic-blocks-ab-columns blockquote {
+	margin: 0;
+	position: relative;
+	text-align: left;
+}
+
+.wp-block-atomic-blocks-ab-columns blockquote p {
+	text-align: left;
+}
+
+.wp-block-atomic-blocks-ab-columns blockquote cite {
+	font-size: 14px;
+	font-style: normal;
+	line-height: 0;
+}
+
+.wp-block-atomic-blocks-ab-columns blockquote cite strong {
+	color: #263238;
+	font-size: 18px;
+}
+
+.wp-block-atomic-blocks-ab-columns blockquote:before {
+	content: '\201C';
+	color: #CFD8DC;
+	background: none;
+	font-size: 110px;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: -65px;
+	top: -45px;
+}
+
+.wp-block-atomic-blocks-ab-columns .photo img {
+	width: 200px;
+}
+
+/* Themes */
+
+.wp-block-atomic-blocks-ab-columns.theme-block .ab-block-layout-column,
+.wp-block-atomic-blocks-ab-columns.cta-themes-tools .ab-block-layout-column {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Cubes */
+
+.wp-block-atomic-blocks-ab-columns .cube-square {
+	width: 400px;
+	height: 400px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+</style>
