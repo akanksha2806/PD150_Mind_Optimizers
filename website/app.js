@@ -32,10 +32,6 @@ const storage = multer.diskStorage({
 
 
 
-const nexmo = new Nexmo({
-    apiKey: '5d41d303',
-    apiSecret: 'ADhpJ9QLgKjAqNBL',
-});
 
 
 
@@ -235,58 +231,9 @@ app.get("/doc", function (req, res) {
 //    res.json(data);
 
 //})
-//symptoms api
-
-app.get('/health', function (req, res) {
-    res.render('healthForm')
-})
-app.post('/health', function (req, res) {
-    // var parameters = {id:req.body.symptom, gender:req.body.gen, year:req.body.year}
-    console.log("REQUEST", req.body);
-    var id = req.body.sym;
-    var gender = req.body.gen;
-    var year = req.body.year;
-    var parameters = [id, gender, year]
-    console.log("PARAMETERS", parameters)
-
-    res.redirect(`/health/${parameters}`)
-
-})
-app.get('/health/:parameters', async (request, response) => {
-    console.log(request.params);
-    const parameters = request.params.parameters.split(',');
-    console.log(parameters);
-    const id = parameters[0];
-    const gender = parameters[1];
-    const year = parameters[2];
-    console.log(id, gender, year);
-    //const api_key = process.env.API_KEY;
-    const health_url = `https://healthservice.priaid.ch/diagnosis?symptoms=[${id}]&gender=${gender}&year_of_birth=${year}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imx1YmhhbmlhZ2Fyd2FsQGdtYWlsLmNvbSIsInJvbGUiOiJVc2VyIiwiaHR0cDovL3NjaGVtYXMueG1sc29hcC5vcmcvd3MvMjAwNS8wNS9pZGVudGl0eS9jbGFpbXMvc2lkIjoiMzY0OSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvdmVyc2lvbiI6IjEwOSIsImh0dHA6Ly9leGFtcGxlLm9yZy9jbGFpbXMvbGltaXQiOiIxMDAiLCJodHRwOi8vZXhhbXBsZS5vcmcvY2xhaW1zL21lbWJlcnNoaXAiOiJCYXNpYyIsImh0dHA6Ly9leGFtcGxlLm9yZy9jbGFpbXMvbGFuZ3VhZ2UiOiJlbi1nYiIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvZXhwaXJhdGlvbiI6IjIwOTktMTItMzEiLCJodHRwOi8vZXhhbXBsZS5vcmcvY2xhaW1zL21lbWJlcnNoaXBzdGFydCI6IjIwMjAtMDEtMTgiLCJpc3MiOiJodHRwczovL2F1dGhzZXJ2aWNlLnByaWFpZC5jaCIsImF1ZCI6Imh0dHBzOi8vaGVhbHRoc2VydmljZS5wcmlhaWQuY2giLCJleHAiOjE1Nzk4MDA5NTQsIm5iZiI6MTU3OTc5Mzc1NH0.mUk15ZITJQHlBm7DhqDVTgSnYAUVlCO5kldbjao59wM&format=json&language=en-gb`;
-    //  const health_url = `https://sandbox-healthservice.priaid.ch/diagnosis?symptoms=[${id}]&gender=${gender}&year_of_birth=${year}&token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6Imt1amFzcml2YXN0YXZhMjRAZ21haWwuY29tIiwicm9sZSI6IlVzZXIiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiI2MzE5IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy92ZXJzaW9uIjoiMjAwIiwiaHR0cDovL2V4YW1wbGUub3JnL2NsYWltcy9saW1pdCI6Ijk5OTk5OTk5OSIsImh0dHA6Ly9leGFtcGxlLm9yZy9jbGFpbXMvbWVtYmVyc2hpcCI6IlByZW1pdW0iLCJodHRwOi8vZXhhbXBsZS5vcmcvY2xhaW1zL2xhbmd1YWdlIjoiZW4tZ2IiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL2V4cGlyYXRpb24iOiIyMDk5LTEyLTMxIiwiaHR0cDovL2V4YW1wbGUub3JnL2NsYWltcy9tZW1iZXJzaGlwc3RhcnQiOiIyMDIwLTAxLTE4IiwiaXNzIjoiaHR0cHM6Ly9zYW5kYm94LWF1dGhzZXJ2aWNlLnByaWFpZC5jaCIsImF1ZCI6Imh0dHBzOi8vaGVhbHRoc2VydmljZS5wcmlhaWQuY2giLCJleHAiOjE1NzkzNjc3MTEsIm5iZiI6MTU3OTM2MDUxMX0.LkSJTqdmtLLTy5uwv3snGTdI6Lg-OdTs1CsLozshM1k&format=json&language=en-gb`;
-    const health_response = await fetch(health_url);
-    //console.log(health_response);
-    const health_data = await health_response.json();
 
 
-    //console.log(health_data)
-    const data = {
-        health: health_data,
 
-    };
-    //console.log(data);
-    //new object().toString()
-
-    //const x = JSON.parse(health_data);
-    //console.log(x);
-
-    //const x =  health_data().toString();
-    //const y =  JSON.parse(x);
-    //console.log(y);
-
-
-    response.json(data);
-
-});
 
 app.delete("/ngo/:id", function (req, res) {
     Ngo.findByIdAndRemove(req.params.id, function (err) {
@@ -301,50 +248,6 @@ app.delete("/ngo/:id", function (req, res) {
 
 
 
-//OCR DYSLEXIC
-app.get("/getImage", function (req, res) {
-
-    res.render("getImageForm");
-});
-
-app.post('/getImage', (req, res) => {
-   
-    let upload = multer({ storage: storage, fileFilter: helpers.imageFilter }).single('pic');
-
-    upload(req, res, function (err) {
-        // req.file contains information of uploaded file
-        // req.body contains information of text fields, if there were any
-
-        if (req.fileValidationError) {
-            return res.send(req.fileValidationError);
-        }
-        else if (!req.file) {
-            return res.send('Please select an image to upload');
-        }
-        else if (err instanceof multer.MulterError) {
-            return res.send(err);
-        }
-        else if (err) {
-            return res.send(err);
-        }
-        //console.log(req.file.path);
-        
-        var imageUrl = req.file.path;
-        //console.log(imageUrl);
-        const spawn = require("child_process").spawn;
-        const process = spawn('python', ["./ocr.py", imageUrl]);
-        process.stdout.setEncoding('utf-8');
-        process.stderr.on('data', function (data) {
-            console.log(data.toString())
-        });
-        process.stdout.on('data', function (data) {
-            response = data.toString();
-            respJson = JSON.parse(response)
-            res.render("DyslexicPage", { Text: respJson.text });
-        });
-    
-    });
-});
 
 
 //search by categories

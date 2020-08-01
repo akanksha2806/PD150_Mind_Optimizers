@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          ngo show 
+        </title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+	<style>
+	   .jumbotron {
+	        background:url('https://thumbs.dreamstime.com/z/disabled-people-disabilities-prosthesis-blind-woman-people-wheelchairs-high-tech-running-prosthetics-disabled-people-127199363.jpg');   
+	        background-position:contain;
+			width:100%;
+			height:100%;
+			text-align:center;
+	   }
+	   .container{
+	      margin-top:-25px;
+	   }
+	</style>
+    <body>
+	<div class="jumbotron">
+       <div class="container">
+            <h1 class="display-4"><b>VISIT  NGO</b></h1>
+       </div>
+    </div>
+	<div class="container main">
+	<div class="ui main text container segment ">
+    <div class="ui huge header"><%= ngo.name %></div>
+    <div class="ui top attached ">
+        <div class="item">
+           <img class="ui centered round image" src="<%= ngo.image %>">
+        </div>
+         <div class="content" id="content">
+            <span><strong><%= ngo.email %></strong></span>
+        </div>
+        <div>
+             <hr>        
+        </div>
+		<h3>ABOUT NGO!</h3>
+        <div class="description">
+            <p><%= ngo.description %></p>
+        </div>
+		<br>
+		<h3>ADDRESS</h3>
+		 <div class="description">
+            <p><%= ngo.address %></p>
+        </div>
+        
+        <a class ="ui green basic button" href="/ngo/<%= ngo._id %>/message"> <i class="icon edit "></i>Send Message</a>
+        <form id="delete" action="/ngo/<%= ngo._id %>?_method=DELETE" method="POST" style="float:right;">
+            <button class="ui red basic button"><i class="icon edit "></i>Delete</button>
+        </form>
+     
+    </div>
+</div>
+
+
+           
+      
+    
+
+
+	
+
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"> 
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+         crossorigin="anonymous">
+      </script>
+
+
+
+</body>
+</html>
