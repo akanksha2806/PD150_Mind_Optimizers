@@ -17,6 +17,8 @@
         <activity android:name=".NormalActivity"></activity>
         <activity android:name=".OverweightActivity" />
         <activity android:name=".UnderweightActivity" />
+        <activity android:name=".Thermometer"></activity>
+        <activity android:name=".TempreatureActivity" />
         <activity android:name=".Measure" />
         <activity android:name=".BMIActivity" />
         <activity android:name=".HeartRateActivity" />
