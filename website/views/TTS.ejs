@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stupid Nonsense Spoken Sentences</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script type='module' src="scripts/TTS.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        #nonsense-heading {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+<h1>Stupid Nonsense Spoken Sentences</h1>
+<div id="suggestions">
+    <p>Say “Done” after providing words of each type.</p>
+    <h2>Adjective Suggestions</h2>
+    perturbed, eager, happy, squeamish, silly
+    <h2>Noun Suggestions</h2>
+    clown, swimmer, mime, train, monkey
+    <h2>Verb Suggestions</h2>
+    squealed, exhaled, jumped, eats, swims
+    <h2>Adverb Suggestions</h2>
+    energetically, tentatively, triumphantly, carefully
+</div>
+<h2>Your Words</h2>
+<dl>
+    <dt>Adjectives</dt>
+    <dd id="adjectives"></dd>
+    <dt>Nouns</dt>
+    <dd id="singular-nouns"></dd>
+    <dt>Verbs</dt>
+    <dd id="indicative-verbs"></dd>
+    <dt>Adverbs</dt>
+    <dd id="adverbs"></dd>
+</dl>
+
+<h2 id="nonsense-heading">Here Comes Some Stupid Nonsense</h2>
+<div id="nonsense">
+</div>
+
+</body>
+
+</html>
