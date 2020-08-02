@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+          New OCR Image
+        </title>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/dropdown.min.css">
+        
+    </head>
+  <style>
+	   .jumbotron{
+	     background:url('https://brainconnection.brainhq.com/wp-content/uploads/2000/06/bc-dyslexia-1200x600.png');
+	      width:100%;
+		  height:490px;
+		  text-align:right;
+		  background-repeat:no-repeat;
+	   }
+	</style>
+
+ <body>
+<div class="jumbotron">
+       <div class="container">
+            
+       </div>
+</div>
+<div class="ui container">
+<h2 class="display-4"><b>REad Dyslexic FriEndlY FoNts<i class="fa fa-user-md" aria-hidden="true"></i></b></h2>
+<div>
+</div>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">New OCR Image</div>
+    
+    <div>
+	<h3>Upload Image and see the Text in Dyslexic Friendly Font</h3>
+	<ul>
+	     <li>STEP 1: Select an Image  --------------               </li>
+		 <li>STEP 2: Click on Submit button --------------         </li>
+		 <li>STEP 3: View Text in dyslexic Friendly font   --------------  </li>
+	</ul>
+	   
+	</div>
+<form  action="/getImage" method="POST" class="ui form" enctype="multipart/form-data">
+    
+        <div class="fields">
+            <div class="eight wide field">
+                <label>Select Image</label>
+                <input type="file" name="pic" />
+            </div>
+        </div>
+       
+        
+       
+    <button class="ui inverted green button ">Submit <i class="icon edit "></i></button>
+   
+</form>
+</div>
+<br>
+</br>
+</div>
+
+
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+         crossorigin="anonymous"> 
+      </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+         crossorigin="anonymous">
+      </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+         crossorigin="anonymous">
+      </script>
+
+
+
+</body>
+</html>
