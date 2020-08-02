@@ -14,7 +14,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".BMIActivity"></activity>
+        <activity android:name=".Measure"></activity>
+        <activity android:name=".BMIActivity" />
         <activity android:name=".HeartRateActivity" />
         <activity android:name=".ChatActivity" />
         <activity android:name=".Users" />
