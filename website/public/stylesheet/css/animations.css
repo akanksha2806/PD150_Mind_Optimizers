@@ -1,0 +1,274 @@
+/* Bounce Up */
+@keyframes bounceUp {
+  0% { transform: translateY(0px) scale(1.0); }
+  10% { transform: translateY(1px) scale(0.99); }
+  30% { transform: translateY(-5px) scale(1.01); }
+  50% { transform: translateY(1px) scale(0.99); }
+  60% { transform: translateY(0px) scale(1.0); }
+  100% { transform: translateY(0px) scale(1.0); }
+}
+
+.animate-bounceUp {
+	animation: bounceUp 2s ease-in-out infinite;
+	visibility: visible;
+	-webkit-backface-visibility: hidden;
+}
+
+
+/* Fade In */
+.fade-in{
+  -webkit-animation: fade-in 2s ease-in-out;
+  -moz-animation: fade-in 2s ease-in-out;
+  -ms-animation: fade-in 2s ease-in-out;
+  -o-animation: fade-in 2s ease-in-out;
+  animation: fade-in 2s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+@-webkit-keyframes fade-in{0%{opacity:0;} 100%{opacity:1;}}
+@-moz-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@-o-keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+@keyframes fade-in{0%{opacity:0} 100%{opacity:1}}
+
+
+/* Rotate 360 */
+@-webkit-keyframes rotate {
+	100% { -webkit-transform: rotate(360deg); }
+}
+
+@-moz-keyframes rotate {
+	100% { -moz-transform: rotate(360deg); }
+}
+
+@-o-keyframes rotate {
+	100% { -o-transform: rotate(360deg); }
+}
+
+@-ms-keyframes rotate {
+	100% { -ms-transform: rotate(360deg); }
+}
+
+@keyframes rotate {
+	100% { transform: rotate(360deg); }
+}
+
+
+/* Slide in from left */
+@-webkit-keyframes slide-in-left {
+	from { opacity: 0; -webkit-transform: translateX(-50px); }
+	to { opacity: 1; -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slide-in-left {
+	from { opacity: 0; -moz-transform: translateX(-50px); }
+	to { opacity: 1; -moz-transform: translateX(0); }
+}
+
+@-o-keyframes slide-in-left {
+	from { opacity: 0; -o-transform: translateX(-50px); }
+	to { opacity: 1; -o-transform: translateX(0); }
+}
+
+@-ms-keyframes slide-in-left {
+	from { opacity: 0; -ms-transform: translateX(-50px); }
+	to { opacity: 1; -ms-transform: translateX(0); }
+}
+
+@keyframes slide-in-left {
+	from { opacity: 0; transform: translateX(-50px); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-left{
+  -webkit-animation: slide-in-left 1s ease-in-out;
+  -moz-animation: slide-in-left 1s ease-in-out;
+  -ms-animation: slide-in-left 1s ease-in-out;
+  -o-animation: slide-in-left 1s ease-in-out;
+  animation: slide-in-left 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Slide in from left */
+@-webkit-keyframes slide-in-left-small {
+	from { opacity: 0; -webkit-transform: translateX(-5px); }
+	to { opacity: 1; -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slide-in-left-small {
+	from { opacity: 0; -moz-transform: translateX(-5px); }
+	to { opacity: 1; -moz-transform: translateX(0); }
+}
+
+@-o-keyframes slide-in-left-small {
+	from { opacity: 0; -o-transform: translateX(-5px); }
+	to { opacity: 1; -o-transform: translateX(0); }
+}
+
+@-ms-keyframes slide-in-left-small {
+	from { opacity: 0; -ms-transform: translateX(-5px); }
+	to { opacity: 1; -ms-transform: translateX(0); }
+}
+
+@keyframes slide-in-left-small {
+	from { opacity: 0; transform: translateX(-5px); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-left-small{
+  -webkit-animation: slide-in-left-small 1s ease-in-out;
+  -moz-animation: slide-in-left-small 1s ease-in-out;
+  -ms-animation: slide-in-left-small 1s ease-in-out;
+  -o-animation: slide-in-left-small 1s ease-in-out;
+  animation: slide-in-left-small 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Slide in from right */
+@-webkit-keyframes slide-in-right {
+	from { opacity: 0; -webkit-transform: translateX(50px); }
+	to { opacity: 1; -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slide-in-right {
+	from { opacity: 0; -moz-transform: translateX(50px); }
+	to { opacity: 1; -moz-transform: translateX(0); }
+}
+
+@-o-keyframes slide-in-right {
+	from { opacity: 0; -o-transform: translateX(50px); }
+	to { opacity: 1; -o-transform: translateX(0); }
+}
+
+@-ms-keyframes slide-in-right {
+	from { opacity: 0; -ms-transform: translateX(50px); }
+	to { opacity: 1; -ms-transform: translateX(0); }
+}
+
+@keyframes slide-in-right {
+	from { opacity: 0; transform: translateX(50px); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right{
+  -webkit-animation: slide-in-right 1s ease-in-out;
+  -moz-animation: slide-in-right 1s ease-in-out;
+  -ms-animation: slide-in-right 1s ease-in-out;
+  -o-animation: slide-in-right 1s ease-in-out;
+  animation: slide-in-right 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Slide in from right */
+@-webkit-keyframes slide-in-right-small {
+	from { opacity: 0; -webkit-transform: translateX(5px); }
+	to { opacity: 1; -webkit-transform: translateX(0); }
+}
+
+@-moz-keyframes slide-in-right-small {
+	from { opacity: 0; -moz-transform: translateX(5px); }
+	to { opacity: 1; -moz-transform: translateX(0); }
+}
+
+@-o-keyframes slide-in-right-small {
+	from { opacity: 0; -o-transform: translateX(5px); }
+	to { opacity: 1; -o-transform: translateX(0); }
+}
+
+@-ms-keyframes slide-in-right-small {
+	from { opacity: 0; -ms-transform: translateX(5px); }
+	to { opacity: 1; -ms-transform: translateX(0); }
+}
+
+@keyframes slide-in-right-small {
+	from { opacity: 0; transform: translateX(5px); }
+	to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-in-right-small{
+  -webkit-animation: slide-in-right-small 1s ease-in-out;
+  -moz-animation: slide-in-right-small 1s ease-in-out;
+  -ms-animation: slide-in-right-small 1s ease-in-out;
+  -o-animation: slide-in-right-small 1s ease-in-out;
+  animation: slide-in-right-small 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Slide in from bottom */
+@-webkit-keyframes slide-in-bottom {
+	from { opacity: 0; -webkit-transform: translateY(10px); }
+	to { opacity: 1; -webkit-transform: translateY(0); -webkit-filter: blur(0); }
+}
+
+@-moz-keyframes slide-in-bottom {
+	from { opacity: 0; -moz-transform: translateY(10px); }
+	to { opacity: 1; -moz-transform: translateY(0); filter: blur(0); }
+}
+
+@-o-keyframes slide-in-bottom {
+	from { opacity: 0; -o-transform: translateY(10px); }
+	to { opacity: 1; -o-transform: translateY(0); filter: blur(0); }
+}
+
+@-ms-keyframes slide-in-bottom {
+	from { opacity: 0; -ms-transform: translateY(10px); }
+	to { opacity: 1; -ms-transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes slide-in-bottom {
+	from { opacity: 0; transform: translateY(10px); }
+	to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.slide-in-bottom {
+  -webkit-animation: slide-in-bottom 1s ease-in-out;
+  -moz-animation: slide-in-bottom 1s ease-in-out;
+  -ms-animation: slide-in-bottom 1s ease-in-out;
+  -o-animation: slide-in-bottom 1s ease-in-out;
+  animation: slide-in-bottom 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+
+/* Slide in from top */
+@-webkit-keyframes slide-in-top {
+	from { opacity: 0; -webkit-transform: translateY(-10px); }
+	to { opacity: 1; -webkit-transform: translateY(0); -webkit-filter: blur(0); }
+}
+
+@-moz-keyframes slide-in-top {
+	from { opacity: 0; -moz-transform: translateY-(10px); }
+	to { opacity: 1; -moz-transform: translateY(0); filter: blur(0); }
+}
+
+@-o-keyframes slide-in-top {
+	from { opacity: 0; -o-transform: translateY(-10px); }
+	to { opacity: 1; -o-transform: translateY(0); filter: blur(0); }
+}
+
+@-ms-keyframes slide-in-top {
+	from { opacity: 0; -ms-transform: translateY(-10px); }
+	to { opacity: 1; -ms-transform: translateY(0); filter: blur(0); }
+}
+
+@keyframes slide-in-top {
+	from { opacity: 0; transform: translateY(-10px); }
+	to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+
+.slide-in-top {
+  -webkit-animation: slide-in-top 1s ease-in-out;
+  -moz-animation: slide-in-top 1s ease-in-out;
+  -ms-animation: slide-in-top 1s ease-in-out;
+  -o-animation: slide-in-top 1s ease-in-out;
+  animation: slide-in-top 1s ease-in-out;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
