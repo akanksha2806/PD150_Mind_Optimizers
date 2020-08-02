@@ -1,7 +1,5 @@
 package com.example.mind_optimizers_android_app;
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -48,6 +46,23 @@ public class HealthActivity extends AppCompatActivity {
                 // Start the new activity
                 startActivity(familyIntent);
                 Toast.makeText(view.getContext(),"Calculate your heart rate",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+        TextView tempreature = (TextView) findViewById(R.id.tempreature);
+
+        // Set a click listener on that View
+        tempreature.setOnClickListener(new View.OnClickListener() {
+            // The code in this method will be executed when the family category is clicked on.
+            @Override
+            public void onClick(View view) {
+                // Create a new intent to open the {@link FamilyActivity}
+                Intent tempreatureIntent = new Intent(HealthActivity.this, TempreatureActivity.class);
+
+                // Start the new activity
+                startActivity(tempreatureIntent);
+                Toast.makeText(view.getContext(),"Measure your Tempreature",Toast.LENGTH_SHORT).show();
 
             }
         });

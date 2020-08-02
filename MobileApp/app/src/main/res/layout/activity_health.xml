@@ -14,21 +14,34 @@
         android:layout_height="wrap_content"
         android:text="BMI"
         android:textAllCaps="true"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:layout_margin="20dp"/>
 
     <TextView
         android:id="@+id/heart_rate"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:textAllCaps="true"
-        android:textSize="50sp"
+        android:textSize="30sp"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:text="Heart Rate"
-        android:background="#ffffff"/>
+        android:background="#ffffff"
+        android:layout_margin="20dp"/>
+    <TextView
+        android:id="@+id/tempreature"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:text="Measure Tempreature"
+        android:background="#ffffff"
+        android:layout_margin="20dp"/>
 
 
 </LinearLayout>
