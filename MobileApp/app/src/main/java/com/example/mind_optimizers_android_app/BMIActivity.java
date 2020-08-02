@@ -5,6 +5,7 @@ package com.example.mind_optimizers_android_app;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -44,12 +45,30 @@ public class BMIActivity extends AppCompatActivity {
                 double h = Double.parseDouble(Height.getText().toString());
                 double temp = w / (h * h);
 
-                if(temp < 18.0)
-                    Toast.makeText(BMIActivity.this, "Underweight", Toast.LENGTH_LONG).show();
-                if(temp > 18.0 && temp <=25)
-                    Toast.makeText(BMIActivity.this, "Normal", Toast.LENGTH_LONG).show();
-                if(temp >25)
-                    Toast.makeText(BMIActivity.this, "Overweight", Toast.LENGTH_LONG).show();
+
+                if(temp < 18.0){
+                    // Toast.makeText(BMIActivity.this, "Underweight", Toast.LENGTH_LONG).show();
+                    Intent settingsIntent = new Intent(BMIActivity.this, UnderweightActivity.class);
+                    settingsIntent.putExtra("BMI", temp);
+                    // Start the new activity
+                    startActivity(settingsIntent);
+                }
+
+
+                if(temp > 18.0 && temp <=25) {
+                    //Toast.makeText(BMIActivity.this, "Normal", Toast.LENGTH_LONG).show();
+                    Intent settingsIntent = new Intent(BMIActivity.this, NormalActivity.class);
+                    settingsIntent.putExtra("BMI", temp);
+                    // Start the new activity
+                    startActivity(settingsIntent);
+                }
+                if(temp >25) {
+                    // Toast.makeText(BMIActivity.this, "Overweight", Toast.LENGTH_LONG).show();
+                    Intent settingsIntent = new Intent(BMIActivity.this, OverweightActivity.class);
+                    settingsIntent.putExtra("BMI", temp);
+                    // Start the new activity
+                    startActivity(settingsIntent);
+                }
 
 
             }

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5FFFA"
+    tools:context=".OverweightActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="25dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+
+        android:id="@+id/bmi"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_margin="25dp"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+
+        android:id="@+id/status"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:id="@+id/suggestions"
+
+        android:text="Get Suggestions"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/health2"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+</LinearLayout>
