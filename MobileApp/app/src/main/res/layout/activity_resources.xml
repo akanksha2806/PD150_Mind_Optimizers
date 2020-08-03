@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#c4ff4d"
+        android:background="#F5FFFA"
         tools:context=".HealthActivity">
 
         <TextView
