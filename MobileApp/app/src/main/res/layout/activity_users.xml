@@ -10,7 +10,8 @@
     android:orientation="vertical"
     android:background="#F5FFFA"
     android:layout_height="match_parent"
-    tools:context=".Users">
+    tools:context=".Users"
+    >
 
     <TextView
         android:layout_width="match_parent"
